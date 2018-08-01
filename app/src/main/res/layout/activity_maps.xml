@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/map"
+        android:layout_marginTop="5dp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal"
+        android:id="@+id/btnNormal"
+        android:layout_below="@id/map"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hybird"
+        android:id="@+id/btnHybird"
+        android:layout_below="@id/map"
+        android:layout_toRightOf="@id/btnNormal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satelit"
+        android:id="@+id/btnSatelit"
+        android:layout_below="@+id/map"
+        android:layout_toRightOf="@id/btnHybird"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terrain"
+        android:id="@+id/btnTerrain"
+        android:layout_below="@+id/map"
+        android:layout_toRightOf="@id/btnSatelit"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Location"
+        android:id="@+id/btnSearch"
+        android:layout_below="@+id/btnNormal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Location"
+        android:id="@+id/btnMy"
+        android:layout_below="@+id/btnNormal"
+        android:layout_toRightOf="@+id/btnSearch"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direction"
+        android:layout_below="@+id/btnNormal"
+        android:layout_toRightOf="@+id/btnMy"
+        android:id="@+id/btnDirection"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_below="@+id/btnSearch"
+        android:text="LOCATION"/>
+
+    </RelativeLayout>
+
+
+
